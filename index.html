@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="imagens/sonic logo.png" alt="" width="100" height="100">
+    <h1> PIXEL PIZZA </h1>
+    <nav>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="Cardápio.html">Cardápio</a>
+            <a href="arcade.html">Arcade</a>
+           
+          </nav>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Pixel Pizza: </h2>
+      <p>
+        Pizza + videogame + jogos de tabuleiro = diversão garantida!
+      </p>
+
+      <button id="openModal">
+        Fazer Cadastro / Login
+      </button>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="Pizza">
+  </section>
+
+  <!-- CARDS -->
+   <div class="tajapreta">
+  <section class="games1">
+    <div class="hero-text">
+      <h2>Fale com a gente!</h2>
+  
+      <p>📍 Rua dos Games, 777</p>
+      <p>📞 (11) 99999-9999</p>
+      <p>📧 pixelpizza@email.com</p>
+  
+      <button>
+        Pedir Pizza 🍕
+      </button>
+    </div>
+  </section>
+
+</div>
+  <!-- MODAL LOGIN -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+
+      <span class="close" id="closeModal">&times;</span>
+
+      <h2>🎮 Área Gamer</h2>
+
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('login')">
+          Login
+        </button>
+
+        <button class="tab-btn" onclick="showTab('register')">
+          Cadastro
+        </button>
+      </div>
+
+      <!-- LOGIN -->
+      <div id="login" class="tab active-tab">
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Senha">
+
+        <button onclick="login()">
+          Entrar
+        </button>
+      </div>
+
+      <!-- CADASTRO -->
+      <div id="register" class="tab">
+        <input type="text" id="registerName" placeholder="Nome">
+        <input type="email" id="registerEmail" placeholder="Email">
+        <input type="password" id="registerPassword" placeholder="Senha">
+
+        <button onclick="register()">
+          Cadastrar
+        </button>
+      </div>
+
+      <p id="message"></p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
